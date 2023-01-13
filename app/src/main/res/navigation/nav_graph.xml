@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/login">
+
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.shoestore.Login.login"
+        tools:layout="@layout/fragment_login"
+        android:label="@string/Login" >
+        <!--use action to navigate welcome screen  -->
+
+        <action
+            android:id="@+id/action_login_to_welcome2"
+            app:destination="@id/welcome2"
+            app:popUpTo="@id/login"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcome2"
+        android:name="com.example.shoestore.Welcome.Welcome"
+        tools:layout="@layout/fragment_welcome"
+        android:label="@string/welcome" >
+        <!--use action to navigate bordindInstructions screen  -->
+        <action
+            android:id="@+id/action_welcome2_to_bordindInstructions"
+            app:destination="@id/bordindInstructions" />
+    </fragment>
+    <fragment
+        android:id="@+id/bordindInstructions"
+        android:name="com.example.shoestore.onBordind.BordindInstructions"
+        android:label="@string/Instructions"
+        tools:layout="@layout/fragment_bordind_instructions" >
+
+        <!--use action to navigate shoeList screen  -->
+        <action
+            android:id="@+id/action_bordindInstructions_to_shoeList"
+            app:destination="@id/shoeList"
+            app:popUpTo="@id/welcome2"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment android:id="@+id/shoeList"
+        android:name="com.example.shoestore.ListShose.Shoelist"
+        tools:layout="@layout/fragment_shoelist"
+        android:label="Shose">
+
+        <!--use action to navigate addItem screen  -->
+
+        <action
+            android:id="@+id/action_shoeList_to_addItem"
+            app:destination="@id/addItem"
+            app:popUpTo="@id/login" />
+
+        <!--use action to navigate showList to Login by item in menu  -->
+
+        <action
+            android:id="@+id/action_shoeList_to_login2"
+            app:destination="@id/login"
+            app:popUpTo="@id/shoeList"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/addItem"
+        android:name="com.example.shoestore.Additem.addItem"
+        android:label="fragment_add_item"
+        tools:layout="@layout/fragment_add_item" >
+
+        <!--use action to navigate ShowListScreen  -->
+
+        <action
+            android:id="@+id/action_addItem_to_shoeList"
+            app:destination="@id/shoeList"
+            app:popUpTo="@id/shoeList"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

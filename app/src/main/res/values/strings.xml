@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">ShoeStore</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="password">Password</string>
+    <string name="username_or_email">Username or Email</string>
+    <string name="welcome">Welcome</string>
+    <string name="this_application_contains_some_of_its_specifications_and_specifications">This application contains some of its specifications and specifications</string>
+    <string name="it_also_helps_you_to_identify_the_manufacturers_of_each_shoe">It also helps you to identify the manufacturers of each shoe</string>
+    <string name="there_is_an_advantage_if_you_know_the_specifications_of_a_particular_shoe_that_does_not_exist_it_can_be_added_to_the_specification_of_the_shoe_in_the_application">There is an advantage if you know the specifications of a particular shoe that does not exist. It can be added to the specification of the shoe in the application.</string>
+    <string name="Login">Login</string>
+    <string name="Instructions">instructions</string>
+    <string name="shoe_name">Shoe Name: %s</string>
+    <string name="company">Company: %s</string>
+    <string name="shoe_size">Shoe Size: %s</string>
+    <string name="description">Description: %s</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="regster">Regster</string>
+    <string name="login">Login</string>
+    <string name="conrinue_screen">Continue</string>
+    <string name="to_shoe_store">to Shoe Store</string>
+</resources>

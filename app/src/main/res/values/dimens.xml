@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="layou_margin">8dp</dimen>
+    <dimen name="textsize">25sp</dimen>
+    <dimen name="big_Text">30sp</dimen>
+    <dimen name="meduim_text">15sp</dimen>
+    <dimen name="paddingBottom">2dp</dimen>
+    <dimen name="small_margin">4dp</dimen>
+</resources>
